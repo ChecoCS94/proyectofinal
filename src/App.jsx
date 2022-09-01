@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable max-len */
 import React, {useEffect, useState} from "react";
 import "./App.css";
@@ -6,18 +7,16 @@ import Inicio from "./pages/inicio";
 import {
   Routes,
   Route,
-  Navigate,
   useNavigate,
 } from "react-router-dom";
 import Producto from "./pages/producto";
 import Form from "./pages/registro";
-//import Login12 from "./pages/login12";
+// import Login12 from "./pages/login12";
 /**
  *
  * @return {html} El componente
  */
 function App() {
-  const [productoID, setProductoID] = useState("");
   const [isUserLogged, setisUserLogged] = useState(false);
   const navigate = useNavigate();
 
