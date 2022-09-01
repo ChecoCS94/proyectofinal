@@ -11,8 +11,7 @@ import {
 } from "react-router-dom";
 import Producto from "./pages/producto";
 import Form from "./pages/registro";
-
-
+//import Login12 from "./pages/login12";
 /**
  *
  * @return {html} El componente
@@ -43,7 +42,7 @@ function App() {
       <Route path="/home" element={<Inicio/>}/>
       <Route path="/producto/:id" element={<Producto/>}/>
       <Route path="/registro" element={<Form/>}/>
-
+      <Route path="/login12" element={<Form/>}/>
     </Routes>
   );
 }
