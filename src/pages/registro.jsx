@@ -2,6 +2,7 @@
 /* eslint-disable max-len */
 import axios from "axios";
 import React, {useState} from "react";
+//import './registroUsuario.css';
 
 const Form = () => {
   const [credentials, setCredentials] = useState({});
@@ -22,15 +23,23 @@ const Form = () => {
   };
   return (
     <>
+   <div class="">
+    <div class="container-fluid" >
+    <img src="https://d1ih8jugeo2m5m.cloudfront.net/2022/07/el-ecommerce-que-es.jpg" class="img-fluid" alt="Responsive image"></img>
+    <br></br>
+    <br></br>
+    <h1 class="alert alert-primary" >Registro</h1>
+    <span class="border border-info"></span>
+   
+    
+    
       <input
         required
-        type="text"
         value={credentials.first_name}
         name="first_name"
         onChange={handleInputCredential}
-        placeholder="Primer nombre"
+        placeholder="Nombre"
       />
-
       <input
         required
         type="text"
@@ -67,10 +76,15 @@ const Form = () => {
         onChange={handleInputCredential}
         placeholder="Contraseña"
       />
-      <button type="submit" onClick={registrarUsuario}>
-            Ingresar
-      </button>
+      <br></br>
+      <br></br>
+      <button class="btn btn-warning" type="submit" onClick={registrarUsuario}> Registrar</button>
+      <br></br>
+      </div>
+
+      </div>
     </>
+
   );
 };
 
